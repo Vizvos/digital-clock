@@ -1,38 +1,70 @@
 body{
-    background-color: aqua;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    font-family: sans-serif;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url("https://images.unsplash.com/photo-1499002238440-d264edd596ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+    overflow: hidden;
 }
 
 .clock{
-    border-radius: 25px;
     background-color: rgb(104, 71, 49);
+    border-width: 100px;
+    border-color: aliceblue;
     justify-content: center;
     align-items: center;
-    min-width: 600px;
+    min-width: 700px;
     height: 350px;
     display: flex;
-    transition: fade ;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
 }
-.clock:hover{
-    grid-template-columns: max-content;
-    background: aliceblue;
-}
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+  }
 .display{
-    background-color: rgb(0, 0, 0);
-    border-radius: 12px;
-    border-width: 10px;
-    display: inline-flex;
-    margin: 50%;
-    min-width: 280px;
+    border-radius: 25px;
+    background-color: rgb(46, 17, 4);
+    border-width: 50px;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 330px;
     min-height: 100px;
-}
-.number{
-    border-radius: 15px;
-    margin: 5px;
-    background-color: rgb(113, 113, 114);
-    color: #000;
-    font-size: 100px;
+    padding: 20px;
     
 }
+
+.clock .text {
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: darkblue;
+    opacity: 0.8;
+  }
+  .clock span {
+    border-radius: 15px;
+    width: 100px;
+    height: 150px;
+    background: rgb(84, 84, 85);
+    opacity: 0.8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    text-shadow: 2px 2px 4px rgb(83, 255, 4);
+    margin: 5px;
+  }
+  .number{
+    width:50px;
+  }
